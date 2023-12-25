@@ -21,6 +21,8 @@ body {
 
 body {
   background-color: var(--primary-color);
+  font-size: 1rem;
+  font-family: "Figtree", "sans-serif";
 }
 
 /* Wrapper styles */
@@ -40,11 +42,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-family: "Figtree", "sans-serif";
   width: 384px;
   border: 1px solid var(--secondary-black-color);
   box-shadow: 8px 8px 0px 0px var(--black-color);
-  /* Add transition property */
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -75,16 +75,15 @@ body {
   display: inline-block;
   border-radius: 4px;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 0.875rem; /* Equivalent to 14px relative to the root font size */
 }
 
 .card__date {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .card__description {
-  font-size: 16px;
   font-weight: 400;
   color: var(--grey-color);
 }
@@ -104,5 +103,19 @@ body {
   display: flex;
   align-items: center;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: 90%;
+  }
+
+  body {
+    font-size: 0.875rem;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
