@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Card</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <img
+          class="card__image"
+          src="./assets/blogimage.svg"
+          alt="card image"
+        />
+        <article class="card__content">
+          <div class="card__tag">
+            <span>Learning</span>
+          </div>
+          <time class="card__date" datetime="2023-12-21">Published 21 Dec 2023</time>
+          <h2 class="card__title">HTML & CSS foundations</h2>
+          <p class="card__description">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </article>
+        <figure class="card__user-info">
+            <img
+              class="card__user-image"
+              src="./assets/userpic.svg"
+              alt="User profile picture"
+            />
+            <figcaption class="card__user-name">
+              <p>Greg Hooper</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
